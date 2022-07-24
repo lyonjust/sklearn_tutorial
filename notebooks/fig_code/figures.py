@@ -69,9 +69,6 @@ def visualize_tree(estimator, X, y, ax: plt.Axes, boundaries=True,
 
     # Put the result into a color plot
     Z = Z.reshape(xx.shape)
-    #plt.pcolormesh(xx, yy, Z, alpha=0.2, cmap='rainbow')
-
-    plt.rcParams['axes.grid'] = False
 
     ax.pcolormesh(xx, yy, Z, alpha=0.2, cmap='rainbow')
     ax.scatter(X[:, 0], X[:, 1], c=y, s=50,
